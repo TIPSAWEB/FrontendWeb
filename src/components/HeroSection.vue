@@ -67,7 +67,6 @@ onMounted(() => {
 .background-video {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -78,7 +77,6 @@ onMounted(() => {
 .trapezoid {
   position: fixed;
   top: 0;
-  left: 0;
   width: 45%;
   height: 100%;
   background-color: #0077aa;

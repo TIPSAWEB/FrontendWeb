@@ -69,7 +69,7 @@
   color: white;
   padding: 3rem 5%;
   position: absolute;
-  width: 99%;
+  width: 100%;
   box-sizing: border-box;
   overflow: hidden;
 }

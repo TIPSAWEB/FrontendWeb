@@ -15,18 +15,21 @@
 <style scoped>
 .company-info {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
   background: white;
   height: 100vh;
-  padding: 5rem;
   position: relative;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  width: 100%;
 }
 
 .info-content {
-  background: white;
-  padding-right: 40%;
-  padding-left: 5%;
+  background: #ffffff;
+  padding-right: 55%;
+  padding-left: 10%;
   padding-top: 5%;
   padding-bottom: 5%;
   border: 5px solid transparent;
@@ -36,6 +39,7 @@
   position: relative;
   border-image: linear-gradient(to left, #5D7975F5, #009ACEEB);
   border-image-slice: 1;
+  margin-left: 5%;
 }
 
 .title {
@@ -84,9 +88,8 @@
 .trapezoid {
   position: absolute;
   top: 0;
-  right: 0;
   width: 45%;
-  height: 80%;
+  height: 100%;
   background-color: #8E8E8E;
   clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
   z-index: 2;

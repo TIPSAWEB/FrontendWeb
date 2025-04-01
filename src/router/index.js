@@ -1,11 +1,17 @@
 import { createRouter, createWebHistory } from "vue-router";
 import LandingView from "../views/LandingView.vue";
+import AboutUs from "../views/AboutUs.vue"; // Importar la nueva vista
 
 const routes = [
   {
     path: "/",
     name: "Landing",
     component: LandingView,
+  },
+  {
+    path: "/nosotros",
+    name: "AboutUs",
+    component: AboutUs,
   },
 ];
 
