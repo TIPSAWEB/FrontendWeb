@@ -18,13 +18,19 @@
     align-items: center;
     height: 700px;
     width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
+
 .shape {
-    background: #4c4c4c;
+    background-image: url('../assets/images/Mision.jpg');
+    background-size: cover;
+    background-position: center;
     width: 50%;
     height: 100%;
     clip-path: polygon(0 0, 90% 0%, 100% 100%, 0% 100%);
+    overflow: hidden;
 }
 
 .text {
@@ -39,7 +45,7 @@
 
 h2 {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: 400;
     color: #5f7975;
     text-align: start;
@@ -49,7 +55,7 @@ h2 {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: justify;
     max-width: 80%;
     line-height: 1.5;

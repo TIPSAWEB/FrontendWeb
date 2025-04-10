@@ -69,7 +69,8 @@
   color: white;
   padding: 3rem 5%;
   position: absolute;
-  width: 100%;
+  left: 0;
+  right: 0;
   box-sizing: border-box;
   overflow: hidden;
 }

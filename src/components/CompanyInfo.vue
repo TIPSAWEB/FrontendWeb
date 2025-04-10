@@ -17,29 +17,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  align-content: center;
   background: white;
   height: 100vh;
   position: relative;
-  margin-bottom: 5%;
-  margin-top: 5%;
+  margin: 10% 0;
   width: 100%;
+  overflow: hidden;
 }
 
 .info-content {
   background: #ffffff;
-  padding-right: 55%;
-  padding-left: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding: 5% 5%;
   border: 5px solid transparent;
-  max-width: 80%;
-  text-align: left;
+  max-width: 70%;
+  text-align: justify;
   z-index: 1;
   position: relative;
   border-image: linear-gradient(to left, #5D7975F5, #009ACEEB);
   border-image-slice: 1;
-  margin-left: 5%;
+  margin: 0 auto;
 }
 
 .title {
@@ -50,6 +46,7 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  margin-right: 60%;
 }
 
 .divider {
@@ -60,10 +57,10 @@
 }
 
 .description {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #333;
   margin-bottom: 1.5rem;
-  margin-right: 20%;
+  margin-right: 50%;
   letter-spacing: 2px;
   line-height: 1.5;
   text-align: justify;
@@ -88,10 +85,26 @@
 .trapezoid {
   position: absolute;
   top: 0;
-  width: 45%;
+  right: 0;
+  width: 50%;
   height: 100%;
-  background-color: #8E8E8E;
+  background-image: url('../assets/images/CompanyInfo.jpg');
+  background-size: cover;
+  background-position: center;
   clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
   z-index: 2;
 }
+
+@media (max-width: 768px) {
+  .info-content {
+    padding: 5% 3%;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .trapezoid {
+    width: 60%;
+  }
+}
+
 </style>

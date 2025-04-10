@@ -45,7 +45,7 @@ onUnmounted(() => {
 <style scoped>
 .carousel {
     position: absolute;
-    width: 100%;
+    left: 0;
     height: 100vh;
     overflow: hidden;
     top: 0;

@@ -30,8 +30,8 @@
 
 .content {
     padding-top: 100vh; /* Para que el carrusel no cubra la sección Us.vue */
-    width: 100%;
+    left: 0;
+    right: 0;
     overflow: hidden;
-    max-width: 100%;
 }
 </style>

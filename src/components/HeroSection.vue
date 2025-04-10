@@ -31,14 +31,14 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
+import { onMounted, onUnmounted, ref } from 'vue';
 
 const trapezoid = ref(null);
 const backgroundVideo = ref(null);
 
 const handleScroll = () => {
   const scrollY = window.scrollY;
-  const triggerPoint = 200; // Ajusta para afinar la transición
+  const triggerPoint = 200;
 
   if (trapezoid.value) {
     trapezoid.value.style.transform = `translateX(${-scrollY}px)`;
@@ -52,7 +52,13 @@ const handleScroll = () => {
 };
 
 onMounted(() => {
+  window.scrollTo(0, 0); // ⬅️ Te lleva al top cuando entras a la página
   window.addEventListener('scroll', handleScroll);
+  handleScroll(); // ⬅️ Ejecuta inmediatamente para evitar el bug visual
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
 });
 </script>
 
@@ -67,6 +73,7 @@ onMounted(() => {
 .background-video {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -77,9 +84,10 @@ onMounted(() => {
 .trapezoid {
   position: fixed;
   top: 0;
-  width: 45%;
+  left: 0;
+  width: 45vw;
   height: 100%;
-  background-color: #0077aa;
+  background-color: #00A5DD99;
   clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
   display: flex;
   align-items: center;

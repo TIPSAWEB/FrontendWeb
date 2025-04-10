@@ -1,5 +1,6 @@
 <template>
     <div class="vision">
+    <div class="overlay"></div>
     <div class="text">
         <h2>VISIÓN</h2>
         <p>
@@ -9,24 +10,38 @@
         humano altamente capacitado para ofrecer productos de bajo consumo energético, bajo mantenimiento y larga duración.
         </p>
     </div>
-    <div class="shape"></div>
     </div>
 </template>
 
 <style scoped>
 .vision {
+    position: relative;
     display: flex;
     align-items: center;
-    background: #4c4c4c;
+    background-image: url('../assets/images/Vision.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
-    height: 700px; /* Ajusta según lo necesites */
+    height: 700px;
     width: 100%;
-    padding: 2rem;
     overflow: hidden;
 }
 
-/* 📌 Sección de texto alineada a la izquierda */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    pointer-events: none;
+}
+
+
 .text {
+    position: relative;
+    z-index: 2;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -35,28 +50,21 @@
     padding: 2rem;
 }
 
-/* 📌 Título con "Bebas Neue" */
 h2 {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 4rem;
+    font-weight: 400;
     color: #5f7975;
+    text-align: start;
+    letter-spacing: 0.2em;
     margin-bottom: 1rem;
 }
 
-/* 📌 Párrafo justificado */
 p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: justify;
     line-height: 1.5;
     max-width: 90%;
 }
 
-/* 📌 Forma inclinada del lado derecho */
-.shape {
-    background: #4c4c4c;
-    width: 40%;
-    height: 100%;
-    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
-}
 </style>

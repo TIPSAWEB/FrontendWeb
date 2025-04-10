@@ -1,7 +1,10 @@
 <template>
-  <nav class="navbar">
+  <nav :class="['navbar', scrolled ? 'expanded' : 'collapsed']">
     <div class="nav-content">
-      <img src="../assets/images/isologo.png" alt="TIPSA" class="logo" />
+      <!-- Solo se muestra el logo cuando el usuario ha hecho scroll -->
+      <template v-if="scrolled">
+        <img src="../assets/images/isologo.png" alt="TIPSA" class="logo" />
+      </template>
       <ul>
         <li>
           <router-link to="/" active-class="active">Inicio</router-link>
@@ -28,14 +31,46 @@
   </nav>
 </template>
 
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+
+const scrolled = ref(false);
+
+const handleScroll = () => {
+  scrolled.value = window.scrollY > 50;
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
+</script>
+
 <style scoped>
 .navbar {
   position: fixed;
   top: 0;
-  width: 100%;
-  background-color: #555;
-  padding: 10px 15px;
+  right: 0;
+  background-color: rgba(142, 142, 142, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* soporte para Safari */
   z-index: 3;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.navbar.collapsed {
+  width: 55vw;
+  clip-path: polygon(6% 0, 100% 0, 100% 100%, 2.5% 100%);
+  padding: 1rem 2%;
+}
+
+.navbar.expanded {
+  width: 100%;
+  clip-path: none;
+  padding: 1rem 5%;
 }
 
 .nav-content {
@@ -44,7 +79,7 @@
   align-items: center;
   max-width: 1800px;
   margin: 0 auto;
-  width: 95%;
+  width: 100%;
 }
 
 .navbar ul {
@@ -77,7 +112,8 @@
 .navbar li a::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -3px;
+  left: 0;
   width: 0;
   height: 2px;
   background-color: white;
@@ -108,5 +144,7 @@
 
 .logo {
   width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 </style>

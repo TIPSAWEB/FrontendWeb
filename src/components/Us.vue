@@ -27,9 +27,9 @@
     text-align: left;
     overflow: hidden;
     width: 100%;
+    margin-bottom: 10%;
 }
 
-/* 📌 Sección "Nosotros" en la esquina superior izquierda con borde inclinado */
 .banner {
     position: absolute;
     top: 0;
@@ -66,7 +66,6 @@ h2 {
 
 p {
     font-size: 1.2rem;
-    line-height: 1.6;
     text-align: justify;
     max-width: 900px;
     margin: 1rem auto;
