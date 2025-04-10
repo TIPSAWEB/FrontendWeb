@@ -149,4 +149,9 @@ onUnmounted(() => {
   gap: 40px;
 }
 
+@media (min-width: 1440px) {
+  .trapezoid {
+    clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
+  }
+}
 </style>

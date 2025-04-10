@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import LandingView from "../views/LandingView.vue";
-import AboutUs from "../views/AboutUs.vue"; // Importar la nueva vista
+import AboutUs from "../views/AboutUs.vue";
+import Solutions from "../views/Solutions.vue";
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: "/nosotros",
     name: "AboutUs",
     component: AboutUs,
+  },
+  {
+    path: "/soluciones",
+    name: "Solutions",
+    component: Solutions,
   },
 ];
 
