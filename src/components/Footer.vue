@@ -68,9 +68,8 @@
   background-color: #00A5DD;
   color: white;
   padding: 3rem 5%;
-  position: absolute;
-  left: 0;
-  right: 0;
+  position: relative;
+  width: 100%;
   box-sizing: border-box;
   overflow: hidden;
 }

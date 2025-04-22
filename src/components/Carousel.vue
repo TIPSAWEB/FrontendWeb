@@ -24,7 +24,7 @@ const carousel = ref(null);
 
 const handleScroll = () => {
     const scrollY = window.scrollY;
-    const triggerPoint = 300; // Cuánto debes scrollear para que empiece a desvanecerse
+    const triggerPoint = 300;
 
     if (carousel.value) {
         carousel.value.style.opacity = Math.max(1 - scrollY / triggerPoint, 0);
@@ -54,7 +54,7 @@ onUnmounted(() => {
 
 .slides {
     display: flex;
-    width: 100%; /* Ajustado para manejar correctamente el slide */
+    width: 100%;
     transition: transform 1.5s ease-out;
 }
 
@@ -62,6 +62,7 @@ onUnmounted(() => {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 0%;
 }
 
 .progress-bar {

@@ -16,6 +16,9 @@ import Footer from "../components/Footer.vue";
 
 <style>
 .landing-page {
+  width: 100vw;
+  overflow-x: clip;
+  position: relative;
   font-family: 'Inter', sans-serif;
   color: white;
 }
