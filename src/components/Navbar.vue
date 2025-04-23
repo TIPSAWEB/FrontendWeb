@@ -62,8 +62,8 @@ onUnmounted(() => {
 }
 
 .navbar.collapsed {
-  width: 55vw;
-  clip-path: polygon(8.7% 0, 100% 0, 100% 100%, 3% 100%);
+  width: 53.2vw;
+  clip-path: polygon(8% 0, 100% 0, 100% 100%, 3.5% 100%);
   padding: 1rem 2%;
 }
 
@@ -150,7 +150,7 @@ onUnmounted(() => {
 
 @media (min-width: 1440px) {
   .navbar.collapsed {
-    clip-path: polygon(6% 0, 100% 0, 100% 100%, 2.5% 100%);
+    clip-path: polygon(7.6% 0, 100% 0, 100% 100%, 2.8% 100%);
   }
 }
 </style>

@@ -85,7 +85,7 @@ onUnmounted(() => {
   position: fixed;
   top: 0;
   left: 0;
-  width: 45vw;
+  width: 50vw;
   height: 100%;
   background-color: #00A5DD99;
   clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
