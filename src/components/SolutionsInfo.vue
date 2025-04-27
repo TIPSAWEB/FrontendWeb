@@ -1,5 +1,6 @@
 <template>
 <div class="solutions">
+    <img src="../assets/images/backgrounds/background-installation.jpg" class="background-img" />
     <div class="top-banners">
     <div class="banner">SOLUCIONES</div>
     <div class="banner2">PROYECTOS LLAVE EN MANO</div>
@@ -22,6 +23,7 @@ color: black;
 text-align: left;
 overflow: hidden;
 width: 100%;
+opacity: 90%;
 }
 
 .top-banners {
@@ -34,6 +36,7 @@ z-index: 1;
 }
 
 .banner {
+opacity: 80%;
 background: #8e8e8e;
 color: white;
 font-family: "Bebas Neue", sans-serif;
@@ -73,10 +76,21 @@ color: #00A5DD;
 font-family: "Bebas Neue", sans-serif;
 font-size: 2.2rem;
 font-weight: 400;
-letter-spacing: 0.3em;
+letter-spacing: 0.2em;
 padding: 1.5rem 4rem;
 clip-path: polygon(8% 0%, 100% 0, 100% 100%, 0% 100%);
 width: 100%;
 text-align: center;
+}
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+  z-index: 0;
 }
 </style>

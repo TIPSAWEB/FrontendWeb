@@ -6,7 +6,8 @@
             <SolutionsInfo />
             <SolutionsGallery />
             <Design />
-
+            <InstallationCommissioning />
+    
             <Footer />
         </div>
     </div>
@@ -18,6 +19,7 @@
     import SolutionsInfo from "../components/SolutionsInfo.vue";
     import SolutionsGallery from "../components/SolutionsGallery.vue";
     import Design from "../components/Design.vue";
+    import InstallationCommissioning from "../components/InstallationCommissioning.vue";
 
     import Footer from "../components/Footer.vue";
 </script>
@@ -29,7 +31,7 @@
 }
 
 .content {
-    padding-top: 100vh; /* Para que el carrusel no cubra la sección SolutionsInfo.vue */
+    padding-top: 58%; /* Para que el carrusel no cubra la sección SolutionsInfo.vue */
     left: 0;
     right: 0;
     overflow: hidden;

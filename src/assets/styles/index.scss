@@ -1,0 +1,43 @@
+.title-blue {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 50px;       /* Tamaño reducido */
+    font-weight: 400;      /* Peso 400 */
+    letter-spacing: 0.1em; /* Separación de letras */
+    color: #00A5DD;
+    text-align: left;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    
+    }
+
+    .text {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        color: black;
+        font-size: 1.4rem;
+        text-align: left;
+        line-height: 1.5;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .cta-button {
+        background: linear-gradient(to right, #5D7975F5, #009ACEEB);
+        color: white;
+        padding: 0.7rem 2rem;
+        border: none;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+        transition: background 0.3s ease;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .cta-button:hover {
+        background: linear-gradient(to right, #4a6260, #0078ac);
+    }
