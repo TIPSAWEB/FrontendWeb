@@ -3,10 +3,10 @@
         <Navbar />
         <CarouselSolution />
         <div class="content">
-          <ProjectsInfo />
-          <Project1 />
-          <Project2 />
-          <ProjectsList />          
+            <ProjectsInfo />
+            <Project1 />
+            <Project2 />
+            <ProjectsList />
         </div>
         <Footer />
     </div>
@@ -19,8 +19,6 @@
     import Project1 from "../components/Project1.vue";
     import Project2 from "../components/Project2.vue";
     import ProjectsList from "../components/ProjectsList.vue";
-
-
     import Footer from "../components/Footer.vue";
 </script>
 
@@ -31,7 +29,7 @@
 }
 
 .content {
-    padding-top: 58%; /* Para que el carrusel no cubra la sección SolutionsInfo.vue */
+    padding-top: 100vh; /* Para que el carrusel no cubra la sección SolutionsInfo.vue */
     left: 0;
     right: 0;
     overflow: hidden;

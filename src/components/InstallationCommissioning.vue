@@ -27,59 +27,59 @@
 <style scoped>
 @import "../assets/styles/index.scss";
 
-.section {
-  position: relative;
-  height: 700px;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  height: 700px;
-  width: 100%;
-  overflow: hidden;
-  flex-direction: row-reverse;
-  background-color: white;
-}
-
-.background-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.2;
-  z-index: 0;
-}
-
-
-
-.shape {
-    background-image: url('../assets/images/installation.png');
+    .section {
+    position: relative;
+    height: 700px;
+    overflow: hidden;
     background-size: cover;
     background-position: center;
-    width: 50%;
-    height: 100%;
-    clip-path: polygon(0 0, 90% 0%, 100% 100%, 0% 100%);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    height: 700px;
+    width: 100%;
     overflow: hidden;
-    transform: scaleX(-1);
-}
+    flex-direction: row-reverse;
+    background-color: white;
+    }
 
-.shape-line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 150px;
-  z-index: 2;
-  pointer-events: none;
-}
+    .background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+    z-index: 0;
+    }
 
-.linea {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
+
+
+    .shape {
+        background-image: url('../assets/images/installation.png');
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        height: 100%;
+        clip-path: polygon(0 0, 90% 0%, 100% 100%, 0% 100%);
+        overflow: hidden;
+        transform: scaleX(-1);
+    }
+
+    .shape-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 2;
+    pointer-events: none;
+    }
+
+    .linea {
+    width: 100%;
+    height: 100%;
+    display: block;
+    }
 </style>
