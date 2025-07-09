@@ -9,6 +9,7 @@
       <button class="cta-button">Conócenos!</button>
     </div>
     <div class="trapezoid"></div>
+    <div class="bottom-cut"></div>
   </section>
 </template>
 
@@ -95,16 +96,71 @@
   z-index: 2;
 }
 
+.bottom-cut {
+  display: none;
+}
+
 @media (max-width: 768px) {
-  .info-content {
-    padding: 5% 3%;
-    max-width: 95%;
-    margin: 0 auto;
-  }
 
   .trapezoid {
-    width: 60%;
+    display: none;
   }
+
+  .company-info {
+    flex-direction: column;
+    height: 100vh;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    background: white;
+  }
+
+  .info-content {
+    position: relative;
+    z-index: 2;
+    background: white;
+    padding: 3rem 10rem;
+    width: 100vw;
+    transform: translate(-10%, 10%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .title {
+    font-size: 1.3rem;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .divider {
+    width: 0%;
+    margin: 0.5rem 0;
+  }
+
+  .cta-button {
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+  }
+
+  .bottom-cut {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-image: url('../assets/images/CompanyInfo.jpg');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 35%, 100% 0, 100% 100%, 0% 100%);
+    z-index: 2;
+  }
+
 }
 
 </style>

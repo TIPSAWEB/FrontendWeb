@@ -1,0 +1,27 @@
+[
+{
+    "title": "Trabajo en equipo",
+    "description": "Fomentamos en nuestra compañía un ambiente de armonía y compañerismo para lograr los objetivos establecidos.",
+    "image": "Value1.png"
+},
+{
+    "title": "Respeto",
+    "description": "Fortalecemos el respeto, que potencia la confianza, y esta última, es garantía de transparencia y buena comunicación entre nuestros miembros y para con nuestros clientes.",
+    "image": "Value2.png"
+},
+{
+    "title": "Honestidad",
+    "description": "Nos dirigimos a nuestros clientes, empleados, proveedores y la sociedad en general con calidad humana, expresándonos con coherencia y sinceridad.",
+    "image": "Value3.png"
+},
+{
+    "title": "Compromiso",
+    "description": "Nos comprometemos con nuestro equipo y el medio ambiente, utilizando productos ecológicos y manteniendo una conciencia sostenible. Además, ofrecemos el mejor servicio a nuestros clientes, fabricando equipos de alta calidad al mejor precio.",
+    "image": "Value4.png"
+},
+{
+    "title": "Calidad",
+    "description": "Inspeccionamos cuidadosamente nuestros procesos, productos y servicios, desempeñando nuestras actividades con pasión, dedicación y trabajo en equipo.",
+    "image": "Value5.png"
+}
+]

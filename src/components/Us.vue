@@ -1,6 +1,8 @@
 <template>
     <div class="us">
+        <div class="top-banner">
         <div class="banner">NOSOTROS</div>
+        </div>
         <div class="content">
             <h2>Comprometidos con la Innovación en Ingeniería y Automatización</h2>
             <div class="divider"></div>
@@ -30,19 +32,25 @@
     margin-bottom: 10%;
 }
 
+.top-banner {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+margin-bottom: 7rem;
+position: relative;
+z-index: 1;
+}
+
 .banner {
-    position: absolute;
-    top: 0;
-    background: #8e8e8e;
-    color: white;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 3rem;
-    font-weight: 400;
-    padding: 1.5rem 4rem;
-    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
-    width: 400px;
-    height: 50px;
-    letter-spacing: 0.3em;
+opacity: 80%;
+background: #8e8e8e;
+color: white;
+font-family: "Bebas Neue", sans-serif;
+font-size: 3rem;
+font-weight: 400;
+padding: 1.5rem 4rem;
+clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+letter-spacing: 0.3em;
 }
 
 .content {
